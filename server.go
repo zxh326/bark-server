@@ -106,6 +106,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 	logrus.Println(" ========================== ")
 	logrus.Println(rBody)
+	logrus.Println("params: ", params)
 	logrus.Println(" ========================== ")
 
 	err = postPush(rBody, deviceToken, params)
